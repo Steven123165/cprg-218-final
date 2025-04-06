@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Shangri La Beach Resort</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-weather">
+      <img src="logo.svg" alt="Shangri La Logo" class="logo" />
+      <div id="weather">Cancun Weather: Sunny 29°C</div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accommodations.html">Accommodations</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="weddings.html">Weddings</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Contact Us</h1>
+        <p>We’re here to help with your questions and bookings. Reach out any time!</p>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="info-box">
+        <h2>Our Address</h2>
+        <p>Shangri La Beach Resort<br />Cancun, Mexico</p>
+      </div>
+      <div class="info-box">
+        <h2>Email Us</h2>
+        <p>info@shangrilacancun.com</p>
+      </div>
+      <div class="info-box">
+        <h2>Call Us</h2>
+        <p>+52 998 555 1234</p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send a Message</h2>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Shangri La Beach Resort. All rights reserved.</p>
+  </footer>
+</body>
+</html>

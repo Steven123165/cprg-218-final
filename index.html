@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri La Beach Resort</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-weather">
+          <img src="logo.svg" alt="Shangri La Logo" class="logo" />
+          <div id="weather">Loading weather for Cancun...</div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="accommodations.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="spa.html">Spa</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <section class="hero">
+          <h1>Shangri La Beach Resort - Your Dream Getaway</h1>
+          <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
+    
+          <img src="images/hero.jpg" alt="Beachfront view of Shangri La Resort" class="hero-image" />
+
+        </section>
+    
+        <section class="highlights">
+          <h2>Experience Unforgettable Moments</h2>
+          <div class="highlight-grid">
+            <article>
+              <h3>Private Beach Access</h3>
+              <p>Step onto our pristine, white-sand beach.</p>
+            </article>
+            <article>
+              <h3>Infinity Pool</h3>
+              <p>Relax by our stunning oceanfront infinity pool.</p>
+            </article>
+            <article>
+              <h3>World-Class Spa</h3>
+              <p>Rejuvenate your mind and body at our spa.</p>
+            </article>
+            <article>
+              <h3>Exquisite Dining</h3>
+              <p>Savor culinary delights at our restaurants.</p>
+            </article>
+          </div>
+        </section>
+    
+        <section class="accommodations">
+          <h2>Our Luxurious Accommodations</h2>
+          <div class="room-list">
+            <article>
+              <h3>Ocean View Deluxe Room</h3>
+              <p>Enjoy stunning ocean views from your private balcony.</p>
+              <a href="accommodations.html#ocean-view">View Details</a>
+            </article>
+            <article>
+              <h3>Beachfront Suite</h3>
+              <p>Step directly onto the sand from your spacious suite.</p>
+              <a href="accommodations.html#beachfront">View Details</a>
+            </article>
+            <article>
+              <h3>Garden View Family Room</h3>
+              <p>Perfect for families, with ample space and garden views.</p>
+              <a href="accommodations.html#garden-view">View Details</a>
+            </article>
+          </div>
+        </section>
+    
+        <section class="testimonials-preview">
+          <h2>What Our Guests Are Saying</h2>
+          <blockquote>
+            "Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."
+            <cite>- Sarah M.</cite>
+          </blockquote>
+          <blockquote>
+            "The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."
+            <cite>- John B.</cite>
+          </blockquote>
+          <a href="testimonials.html">Read More Testimonials</a>
+        </section>
+      </main>
+    
+      <footer class="site-footer">
+        <p>&copy; 2025 Shangri La Beach Resort. All rights reserved.</p>
+        <p>Website by [Your Name].</p>
+      </footer>
+    
+      <script>
+        // Basic Cancun weather fetch placeholder
+        document.addEventListener("DOMContentLoaded", () => {
+          fetch('https://wttr.in/Cancun?format=3')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById("weather").textContent = data;
+            })
+            .catch(() => {
+              document.getElementById("weather").textContent = "Weather unavailable.";
+            });
+        });
+      </script>
+</body>
+</html>
